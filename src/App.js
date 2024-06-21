@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes ,Route} from 'react-router-dom';
-import { Home } from './Home';
-import Home1 from './Home1'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { MobileHome } from './MobileHome';
+import Home from './Home'
 import './App.css';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home1 />} />
-        <Route exact path="/Home1" element={<Home />} />
-        </Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/mobileHome" element={<MobileHome />} />
+      </Routes>
     </Router>
   );
 }
